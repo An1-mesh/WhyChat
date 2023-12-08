@@ -45,7 +45,7 @@ if(isset($_POST["register"]))
     {
         if($user_object->save_data())
         {
-            $success_message = 'Verification email sent to ' . $user_object->getUserEmail() . ', pleease verify your email before login';
+            $success_message = 'Verification email sent to ' . $user_object->getUserEmail() . ', please verify your email before login';
 
             $_SESSION['success_message'] = 'Your email has been successfully verified, now you can login';
 
